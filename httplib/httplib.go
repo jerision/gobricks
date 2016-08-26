@@ -163,8 +163,8 @@ func (b *HttpRequest) SetEnableCookie(enable bool) *HttpRequest {
 }
 
 //Set cookie
-func (b *HttpRequest) SetCookie(cookie *http.CookieJar) *HttpRequest {
-	b.setting.Cookies = cookie
+func (b *HttpRequest) SetCookieJar(cookiejar http.CookieJar) *HttpRequest {
+	b.setting.Cookies = cookiejar
 	return b
 }
 
